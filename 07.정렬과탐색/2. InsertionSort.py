@@ -1,6 +1,7 @@
 def printStep(A, idx):
-    print('   Step %d : ' %idx, end='')
+    print("   Step %d : " % idx, end="")
     print(A)
+
 
 def insertionSort(A):
     n = len(A)
@@ -16,6 +17,7 @@ def insertionSort(A):
         A[j + 1] = key
 
         printStep(A, i)
+
 
 if __name__ == "__main__":
     data = [5, 3, 8, 4, 9, 1, 6, 2, 7]

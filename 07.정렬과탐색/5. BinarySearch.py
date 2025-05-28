@@ -1,13 +1,15 @@
 import random
 
+
 def seqSearch(A, key):  # 순차 탐색
     n = len(A)
 
     for i in range(n):
         if A[i] == key:
             return i
-        
+
     return -1
+
 
 def insertionSort(A):  # 삽입정렬
     n = len(A)
@@ -17,18 +19,19 @@ def insertionSort(A):  # 삽입정렬
         j = i - 1
 
         while j >= 0 and A[j] > key:
-            A[j+1] = A[j]
+            A[j + 1] = A[j]
             j -= 1
 
-        A[j+1] = key
+        A[j + 1] = key
+
 
 def iBinarySearch(A, key):  # 반복문 이진탐색
     low = 0
     high = len(A) - 1
 
-    while(low <= high):
+    while low <= high:
         mid = (low + high) // 2  # 정수나누기
-        print(A[mid], end=' ')
+        print(A[mid], end=" ")
 
         if key == A[mid]:
             return mid
@@ -39,10 +42,11 @@ def iBinarySearch(A, key):  # 반복문 이진탐색
 
     return -1
 
+
 def rBinarySearch(A, key, low, high):  # 순환호출 이진탐색
     if low <= high:
         mid = (low + high) // 2  # 정수나누기
-        print(A[mid], end=' ')
+        print(A[mid], end=" ")
 
         if key == A[mid]:
             return mid
@@ -53,7 +57,8 @@ def rBinarySearch(A, key, low, high):  # 순환호출 이진탐색
 
     return -1
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     A = []
     for i in range(15):
         A.append(random.randint(1, 100))
