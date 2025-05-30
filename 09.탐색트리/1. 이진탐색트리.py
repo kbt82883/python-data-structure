@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
     for key in data:
         root = insert(root, key)
-        display(root, "[Inserㄴt %2d] : " % key)
+        display(root, "[Insert %2d] : " % key)
     print()
 
     # root = delete(root, 30)
