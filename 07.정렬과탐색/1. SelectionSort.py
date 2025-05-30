@@ -1,5 +1,6 @@
 def printStep(A, idx):
-    print("   Step %d : " % idx, A)
+    print("   Step %d : " % idx, end="")
+    print(A)
 
 
 def selectionSort(A):

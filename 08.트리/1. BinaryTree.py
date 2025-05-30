@@ -104,6 +104,7 @@ if __name__ == "__main__":
     print("Tree Height: %d" % T.getHeight(N1))
 
     T.treeReverse(N1)
+    print("\nreversed\n")
 
     print("Pre  : ", end="")
     T.preOrder(N1)

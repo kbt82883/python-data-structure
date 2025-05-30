@@ -17,9 +17,11 @@ class HashTable:
     def insert(self, key):
         bucket = self.hashFn(key)
 
-        node = Node(key)
-        node.next = self.table[bucket]
-        self.table[bucket] = node
+        node = Node(key)  # 노드 만들고
+        node.next = self.table[
+            bucket
+        ]  # 노드의 next가 버킷 헤드가 가르키고 있던 노드를 가르킴
+        self.table[bucket] = node  # 버킷 헤드가 노드를 가르킴
 
     def display(self):
         for i in range(M):
