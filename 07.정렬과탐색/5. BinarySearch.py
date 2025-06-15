@@ -25,6 +25,7 @@ def insertionSort(A):  # 삽입정렬
         A[j + 1] = key
 
 
+# O(log n)
 def iBinarySearch(A, key):  # 반복문 이진탐색
     low = 0
     high = len(A) - 1
@@ -43,6 +44,7 @@ def iBinarySearch(A, key):  # 반복문 이진탐색
     return -1
 
 
+# O(log n)
 def rBinarySearch(A, key, low, high):  # 순환호출 이진탐색
     if low <= high:
         mid = (low + high) // 2  # 정수나누기

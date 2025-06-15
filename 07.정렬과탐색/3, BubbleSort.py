@@ -1,3 +1,7 @@
+# 최악: O(n^2)
+# 이미 정렬된 경우 최선: O(n)
+
+
 def printStep(A, idx):
     print("   Step %d : " % idx, end="")
     print(A)

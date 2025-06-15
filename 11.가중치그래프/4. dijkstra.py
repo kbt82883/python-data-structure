@@ -1,3 +1,6 @@
+# O(V^2)
+
+# A로부터 다른 모든 정점들까지의 최단 거리 구하기
 INF = 1000
 
 vName = ["A", "B", "C", "D", "E", "F", "G"]
@@ -48,8 +51,8 @@ def dijkstra(s):
             if dist[t] > dist[s] + Graph[s][t]:
                 dist[t] = dist[s] + Graph[s][t]
 
-        print("[%c] : " % vName[s], end="")
-        display()
+        print("[%c] : " % vName[s], end="")  # 현재까지 최단거리임이 확정된 정점을 출력
+        display()  # 현재까지 확정된 dist상태를 출력
 
 
 if __name__ == "__main__":

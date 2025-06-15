@@ -1,3 +1,5 @@
+# O(n + e)
+
 vName = ["A", "B", "C", "D", "E", "F", "G", "H"]
 visited = [False] * len(vName)  # 방문기록
 

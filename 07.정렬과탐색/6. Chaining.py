@@ -14,6 +14,7 @@ class HashTable:
     def hashFn(self, key):  # 해시함수
         return key % M
 
+    # O(n)
     def insert(self, key):
         bucket = self.hashFn(key)
 

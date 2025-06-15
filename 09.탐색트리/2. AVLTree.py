@@ -1,3 +1,6 @@
+# O(log n)
+
+
 class TreeNode:
     def __init__(self, key):
         self.key = key

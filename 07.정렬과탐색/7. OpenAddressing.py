@@ -11,6 +11,7 @@ class HashTable:
     def hashFn2(self, key):  # 이중 해시법
         return 11 - (key % 11)  # M보다 작은 수 중에 제일 큰 소수
 
+    # O(n)
     def insert(self, key):
         hashVal = self.hashFn(key)
 
@@ -28,6 +29,7 @@ class HashTable:
                 self.table[bucket] = key
                 break
 
+    # O(n)
     def search(self, key):
         hashVal = self.hashFn(key)
 
@@ -46,6 +48,7 @@ class HashTable:
             elif self.table[bucket] == key:
                 return bucket
 
+    # O(n)
     def delete(self, key):
         hashVal = self.hashFn(key)
 

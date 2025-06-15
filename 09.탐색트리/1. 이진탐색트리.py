@@ -6,6 +6,8 @@ class TreeNode:
         self.right = None
 
 
+# 평균: O(log n)
+# 최악: O(n)
 def insert(root, key):
     if root == None:  # 현재 위치가 비어있으면
         return TreeNode(key)
@@ -29,6 +31,8 @@ def getMinNode(root):  # 계속 왼쪽 자식 노드로 갈 수 있으면 감
     return root
 
 
+# 평균: O(log n)
+# 최악: O(n)
 def delete(root, key):
     # case 1: 단말노드의 삭제 or 자식이 하나(오른쪽)인 노드의 삭제
     # case 2: 자식이 하나(왼쪽)인 노드의 삭제
@@ -56,6 +60,7 @@ def delete(root, key):
     return root  # 삭제가 끝나면, 상위 노드에게 현재의 노드를 반환해서 그대로 연결됨
 
 
+# O(n)
 def preOrder(root):
     if root != None:
         print("%2d " % root.key, end="")

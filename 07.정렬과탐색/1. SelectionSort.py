@@ -1,3 +1,6 @@
+# O(n^2)
+
+
 def printStep(A, idx):
     print("   Step %d : " % idx, end="")
     print(A)
